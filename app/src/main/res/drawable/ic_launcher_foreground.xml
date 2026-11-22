@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer Fintech Shield (centered inside 66dp safe zone: x 24..84, y 22..86) -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M54,23 L78,32.5 V53.5 C78,68.8 67.6,80.6 54,85 C40.4,80.6 30,68.8 30,53.5 V32.5 L54,23 Z" />
+    <!-- Inner Deep Navy Shield Cutout -->
+    <path
+        android:fillColor="#0A1931"
+        android:pathData="M54,28.5 L72.5,35.8 V53.2 C72.5,65.5 64.4,75.2 54,79 C43.6,75.2 35.5,65.5 35.5,53.2 V35.8 L54,28.5 Z" />
+    <!-- Ascending Growth Bar 1 -->
+    <path
+        android:fillColor="#22D3EE"
+        android:pathData="M42,63 L42,54 L47,54 L47,63 Z" />
+    <!-- Ascending Growth Bar 2 -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M50.5,63 L50.5,47 L55.5,47 L55.5,63 Z" />
+    <!-- Ascending Growth Bar 3 -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M59,63 L59,40 L64,40 L64,63 Z" />
+    <!-- Upward Arrow Accent -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M42,50 L54,39 L65,39 L65,43.5 L55.5,43.5 L44.5,53 Z" />
+</vector>

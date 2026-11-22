@@ -1,0 +1,6 @@
+{
+  "name": "E-Finance Rwanda",
+  "description": "Complete digital financial platform for Rwanda with savings, Mobile Money withdrawals, loans, video and task rewards, daily check-ins, KYC verification, and super admin management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

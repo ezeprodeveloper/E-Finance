@@ -1,0 +1,1210 @@
+MASTER PROMPT: BUILD E-FINANCE RWANDA – COMPLETE DIGITAL FINANCIAL PLATFORM
+
+1. PROJECT OVERVIEW
+
+Build a complete, secure, professional, modern financial technology platform called E-FINANCE RWANDA.
+
+The platform is designed primarily for Rwandan citizens and residents.
+
+E-FINANCE RWANDA must allow registered and approved users to:
+
+1. Save money whenever they want.
+2. Request withdrawals when they need money.
+3. Apply for loans through the platform.
+4. Earn money by watching short videos.
+5. Upload and monetize their own videos.
+6. Create paid tasks for other users.
+7. Earn rewards through daily check-ins.
+8. View their complete financial history.
+9. Complete KYC verification before accessing financial services.
+10. Manage their accounts through a personal dashboard.
+
+The platform must have two major environments:
+
+- USER PLATFORM
+- SUPER ADMINISTRATION PLATFORM
+
+Build a real functional application, not just a static website or UI demonstration.
+
+2. TECHNOLOGY AND DEVELOPMENT REQUIREMENTS
+
+Use the following recommended technologies:
+
+- Backend: PHP 8.2+ using clean, structured PHP.
+- Database: MySQL.
+- Database connection: PDO with prepared statements.
+- Frontend: HTML5, CSS3, JavaScript.
+- UI framework: Bootstrap 5 or a custom responsive CSS framework.
+- Icons: Professional SVG or Font Awesome icons.
+- Charts: Chart.js.
+- Server: Apache using XAMPP for local development.
+- Timezone: Africa/Kigali.
+- Currency: Rwandan Franc (RWF).
+
+Use a modular architecture with reusable components.
+
+Create a complete database schema, authentication system, backend processing, frontend pages, admin permissions and all required integrations.
+
+The project must work on Windows XAMPP and be prepared for secure hosting deployment.
+
+3. PUBLIC WEBSITE – BEFORE REGISTRATION
+
+Before creating an account, visitors must be able to explore the E-FINANCE RWANDA public website.
+
+Create the following public pages:
+
+- Home
+- About E-Finance
+- How It Works
+- Saving
+- Withdrawals
+- Loans
+- Earn With Videos
+- Paid Tasks
+- Advertisements
+- Frequently Asked Questions
+- Contact Us
+- Terms and Conditions
+- Privacy Policy
+- Login
+- Create Account
+
+The homepage must display:
+
+- E-FINANCE RWANDA branding.
+- A professional welcome section.
+- Advertisements uploaded by administrators.
+- Promotional banners.
+- Short promotional videos.
+- Financial services information.
+- How to earn money.
+- How saving works.
+- How to apply for loans.
+- Registration and login buttons.
+- Latest platform announcements.
+- Contact information.
+
+Administrators must be able to upload, edit, activate, deactivate and delete advertisements.
+
+Public visitors must see advertisements without creating an account.
+
+4. THREE-STEP USER REGISTRATION
+
+Create a professional three-step registration process.
+
+STEP 1: PERSONAL IDENTIFICATION
+
+Collect:
+
+1. First Name
+2. Second Name
+3. Email Address
+4. Phone Number
+5. Gender
+6. Date of Birth
+7. National ID Number
+8. National ID Photo Upload
+
+Important requirements:
+
+- Validate all fields.
+- Email addresses must be unique.
+- Phone numbers must be unique.
+- National ID numbers must be unique.
+- Validate the expected Rwandan phone number format.
+- Allow JPG, JPEG and PNG images with secure file validation.
+- The original identity document image must not be editable or replaceable by the user after submission.
+- Only authorized administrators may approve or reject identity-document corrections, with an audit record.
+- Protect all personal information.
+
+STEP 2: EDUCATIONAL BACKGROUND
+
+First ask the user to select their education category.
+
+If UNIVERSITY:
+
+Collect:
+
+- University Name
+- Academic Level
+- Faculty
+- Program or Course of Study
+
+If A-LEVEL:
+
+Collect:
+
+- School Name
+- Current Class
+- Combination
+
+Allow the administrator to manage education categories and options.
+
+STEP 3: PLACE OF BIRTH AND RESIDENCE
+
+Collect:
+
+Place of Birth
+
+- Country
+- Province
+- District
+- Sector
+- Cell
+- Village
+
+Current Place of Residence
+
+- Country
+- Province
+- District (optional)
+- Sector (optional)
+- Cell (optional)
+- Village (optional)
+
+Finally collect:
+
+- Create Password
+- Confirm Password
+
+Password requirements:
+
+- Secure password hashing using PHP password_hash().
+- Never store plain-text passwords.
+- Password confirmation.
+- Minimum password strength.
+- Secure login sessions.
+- Forgot Password functionality.
+- Email verification where configured.
+
+REGISTRATION APPROVAL
+
+After completing registration:
+
+- Account status must be PENDING.
+- The user must wait for administrator approval.
+- The administrator receives a notification about the new registration.
+- The user can see their application status.
+- The administrator can approve, reject or request corrections.
+- If approved, the user can proceed to the activation payment stage.
+
+5. ACCOUNT ACTIVATION PAYMENT
+
+After registration approval, display an account activation payment requirement of 200 RWF.
+
+Use this Rwanda Mobile Money payment reference:
+
+182811880554*AMOUNT#
+
+The amount must be replaceable by the administrator through system settings.
+
+Display:
+
+- Payment amount.
+- Payment instructions.
+- Recipient information.
+- Payment reference.
+- Payment verification status.
+
+The user must submit a payment reference or transaction ID.
+
+IMPORTANT:
+
+Do not automatically mark a payment as successful simply because a user submitted a reference.
+
+The administrator must verify the payment, or the system must verify it through an officially integrated payment provider.
+
+After successful verification:
+
+- Activate the account.
+- Give the user access to the full dashboard.
+- Record the activation transaction.
+- Display the activation bonus of 200 RWF separately in the user's wallet.
+
+The administrator must be able to configure bonus eligibility, withdrawal eligibility and payment settings.
+
+6. USER DASHBOARD
+
+Create a modern, comprehensive user dashboard.
+
+At the top display:
+
+- Welcome message with user's first name.
+- User profile photo.
+- Account verification status.
+- Live Rwanda date and time.
+- Notification icon.
+- User menu.
+- Logout button.
+
+FINANCIAL SUMMARY CARDS
+
+Display:
+
+1. Available Balance
+2. Savings Balance
+3. Loan Balance
+4. Video Earnings
+5. Task Earnings
+6. Daily Check-in Rewards
+7. Welcome Bonus
+8. Total Earnings
+9. Pending Withdrawals
+
+All financial figures must be fetched dynamically from the database.
+
+QUICK ACTIONS
+
+Create buttons for:
+
+- Deposit Money
+- Save Money
+- Withdraw Money
+- Apply for Loan
+- Watch Videos
+- Upload Video
+- Create Task
+- Daily Check-in
+- Transaction History
+- Complete KYC
+
+DASHBOARD CONTENT
+
+Display:
+
+- Recent transactions.
+- Recent activities.
+- Saving progress.
+- Loan application status.
+- Video earnings.
+- Task performance.
+- Daily check-in progress.
+- Notifications.
+- Account announcements.
+- Financial statistics and charts.
+
+7. SAVING MONEY MODULE
+
+Create a complete savings management system.
+
+Users must be able to save money whenever they want.
+
+Features:
+
+- Deposit money into savings.
+- Choose the amount.
+- Select savings purpose.
+- Add a description.
+- View savings balance.
+- View total deposits.
+- View savings history.
+- View deposit dates and times.
+- View savings progress.
+
+Create different savings options:
+
+- Flexible Savings.
+- Goal-Based Savings.
+- Long-Term Savings.
+
+Allow administrators to configure savings rules, withdrawal restrictions, fees and applicable interest only where legally authorized.
+
+Users must be able to request money from their savings according to the applicable rules.
+
+Every savings operation must create a permanent financial transaction record.
+
+8. WITHDRAWAL MODULE
+
+Users must be able to request money withdrawals.
+
+Withdrawal requirements:
+
+- KYC verification must be approved.
+- Account must be active.
+- Sufficient available balance.
+- Valid withdrawal destination.
+- Withdrawal request must be recorded.
+
+Support Rwanda payment destinations such as:
+
+- MTN Mobile Money.
+- Airtel Money.
+
+Display:
+
+- Requested amount.
+- Withdrawal fee.
+- Tax or other applicable deductions, if legally required.
+- Net amount to receive.
+- Destination phone number.
+- Transaction reference.
+- Withdrawal status.
+
+WITHDRAWAL FEE
+
+Configure a default withdrawal platform fee of 25%.
+
+Example:
+
+Withdrawal request: 10,000 RWF.
+
+Platform fee (25%): 2,500 RWF.
+
+Net amount: 7,500 RWF.
+
+Display the calculation before the user confirms.
+
+The 25% must be configurable by the administrator and clearly disclosed to users.
+
+Never deduct money twice.
+
+Withdrawal statuses:
+
+- Pending
+- Under Review
+- Approved
+- Processing
+- Completed
+- Rejected
+- Cancelled
+
+The administrator must approve or reject withdrawal requests.
+
+Only mark a withdrawal completed after the actual payment has been confirmed.
+
+9. LOAN MANAGEMENT MODULE
+
+Build a complete loan application and management system.
+
+Users must be able to:
+
+- Apply for a loan.
+- Enter requested loan amount.
+- Select repayment period.
+- Provide loan purpose.
+- Provide supporting information.
+- Submit the application.
+- Track loan status.
+- View approved loan details.
+- View repayment schedules.
+- View outstanding balance.
+- View repayment history.
+
+Administrator functions:
+
+- Review loan applications.
+- Approve or reject loans.
+- Set authorized lending limits.
+- Configure interest and fees where permitted.
+- Set repayment schedules.
+- Record repayments.
+- Track overdue loans.
+- Manage loan products.
+- View loan performance reports.
+
+Loan approval must never be automatic without the configured eligibility checks and required human review.
+
+Do not promise loans to users merely because they have registered.
+
+10. WATCH VIDEOS AND EARN MONEY
+
+Create a professional video earning section.
+
+Users must be able to watch short videos and receive rewards.
+
+Display:
+
+- Video thumbnail.
+- Video title.
+- Video description.
+- Video duration.
+- Reward per completed view.
+- Remaining available views.
+- Watch button.
+
+VIDEO VIEWING RULES
+
+- Every user may receive payment for a particular video only once.
+- A user cannot earn twice from the same video.
+- A completed view must satisfy the minimum watch duration configured by the administrator.
+- Track user ID, video ID, viewing time and completion status.
+- Detect suspicious activity.
+- Prevent duplicate reward claims.
+- Block obvious automated viewing and repeated fraudulent requests.
+- Do not reward incomplete or invalid views.
+
+After a valid completed view:
+
+- Calculate the approved reward.
+- Credit the user's video earnings wallet.
+- Create a transaction.
+- Update the balance immediately.
+- Display a success notification.
+
+Administrators must control:
+
+- Video approval.
+- Video activation.
+- Reward amounts.
+- Minimum watch duration.
+- Maximum eligible views.
+- Campaign start and end dates.
+
+11. UPLOAD VIDEOS AND CREATE PAID VIDEO CAMPAIGNS
+
+Users must be able to upload their own videos for other E-FINANCE members to watch.
+
+Create an upload form with:
+
+- Video Title
+- Description
+- Video Category
+- Video File
+- Thumbnail
+- Reward Per Valid View
+- Target Number of Viewers
+- Campaign Budget
+- Campaign Duration
+
+MINIMUM VIDEO REWARD
+
+The minimum reward must be:
+
+50 RWF PER VALID VIEW.
+
+The user must not be allowed to set a lower reward.
+
+The system must calculate the campaign budget automatically.
+
+Example:
+
+Reward per view: 50 RWF.
+
+Target viewers: 100.
+
+Total campaign reward budget: 5,000 RWF.
+
+Display any additional platform fees separately.
+
+Formula:
+
+Campaign Budget = Reward Per View × Target Views + Applicable Fees.
+
+CAMPAIGN PAYMENT
+
+Before a campaign is published, the uploader must pay the required campaign budget.
+
+Display this payment reference:
+
+182811880554*AMOUNT#
+
+Allow users to submit payment transaction references.
+
+The administrator must verify payments before the campaign is activated, unless an official payment gateway is integrated.
+
+CAMPAIGN APPROVAL
+
+Every uploaded video must be reviewed by the administrator before publication.
+
+Campaign statuses:
+
+- Draft
+- Pending Payment
+- Payment Verification
+- Pending Approval
+- Approved
+- Active
+- Paused
+- Completed
+- Rejected
+
+Display:
+
+- Total campaign budget.
+- Amount spent.
+- Valid views.
+- Remaining viewers.
+- Remaining budget.
+- Campaign progress.
+
+Never allow a campaign to distribute more rewards than its available funded budget.
+
+12. PAID TASK CREATION SYSTEM
+
+Users must be able to create their own tasks for other E-FINANCE users.
+
+Create a task creation form containing:
+
+- Task Title
+- Task Description
+- Task Category
+- Task Instructions
+- Task Requirements
+- Required Proof
+- Number of Participants
+- Reward Per Approved Participant
+- Campaign Budget
+- Start Date
+- End Date
+
+Allow users to define their own requirements.
+
+Examples:
+
+- Watch a video.
+- Visit a website.
+- Follow a public social media page.
+- Complete a survey.
+- Upload a screenshot.
+- Answer questions.
+- Complete an educational activity.
+
+All tasks must be reviewed by administrators before publication.
+
+TASK COMPLETION
+
+When a user completes a task:
+
+- Submit the required proof.
+- Save the completion date.
+- Record the user who submitted it.
+- Set the submission status to PENDING REVIEW.
+
+ADMINISTRATOR TASK VERIFICATION
+
+The task creator must not have final approval rights.
+
+Only authorized administrators can:
+
+- Review task submissions.
+- Compare submitted proof with the original requirements.
+- Approve completed tasks.
+- Reject incomplete submissions.
+- Provide rejection reasons.
+- Record review dates.
+
+After administrator approval:
+
+- Credit the user's earnings wallet.
+- Record the reward transaction.
+- Notify the user.
+- Update task statistics.
+
+TASK ANTI-DUPLICATION RULE
+
+One user must only be allowed to complete a particular task once.
+
+Implement database-level duplicate prevention using a unique constraint on user ID and task ID.
+
+Prevent multiple reward payments for the same task completion.
+
+13. DAILY CHECK-IN REWARD
+
+Create a daily check-in feature.
+
+Default reward:
+
+20 RWF PER DAY.
+
+Users can claim their reward once per Rwanda calendar day.
+
+Display:
+
+- Today's check-in status.
+- Today's reward.
+- Total check-in earnings.
+- Check-in history.
+- Current consecutive-day streak.
+- Monthly check-in calendar.
+
+The system must use Africa/Kigali timezone.
+
+Prevent users from claiming multiple daily rewards by refreshing pages, changing devices or sending repeated requests.
+
+Every reward must be recorded as a separate transaction.
+
+Allow the administrator to configure check-in rewards and eligibility.
+
+14. KYC – KNOW YOUR CUSTOMER
+
+Before users can deposit, save, withdraw or access lending services, require KYC verification according to the applicable service requirements.
+
+Create a complete KYC form designed for Rwanda.
+
+Collect:
+
+- Full Legal Name
+- National ID Number
+- Date of Birth
+- Gender
+- Phone Number
+- Email
+- Province
+- District
+- Sector
+- Cell
+- Village
+- National ID Front Photo
+- National ID Back Photo, where applicable
+- Selfie or additional identity verification where required
+- Additional information required by the approved KYC process.
+
+KYC ADMIN DASHBOARD
+
+Create a dedicated KYC management section.
+
+Administrators must see:
+
+- All KYC applications.
+- Applicant name.
+- User ID.
+- Phone number.
+- National ID number.
+- Uploaded identity documents.
+- Submission date.
+- Verification status.
+
+Actions:
+
+- View KYC details.
+- Approve KYC.
+- Reject KYC.
+- Request additional documents.
+- Provide rejection reasons.
+- View verification history.
+
+Statuses:
+
+- Not Submitted
+- Pending
+- Under Review
+- Approved
+- Rejected
+- Additional Information Required
+
+Only authorized administrators may access sensitive identity documents.
+
+Protect all KYC files using private storage and controlled access. Never expose identity documents through public URLs.
+
+15. COMPLETE TRANSACTION HISTORY
+
+Create a dedicated transaction history page.
+
+Users must be able to see every financial activity.
+
+Transaction categories:
+
+- Account Activation
+- Welcome Bonus
+- Deposits
+- Savings
+- Savings Withdrawals
+- Withdrawals
+- Withdrawal Fees
+- Loan Disbursements
+- Loan Repayments
+- Video Rewards
+- Video Campaign Payments
+- Task Rewards
+- Task Campaign Payments
+- Daily Check-in
+- Refunds
+- Adjustments
+
+Every transaction must display:
+
+- Transaction ID
+- Transaction Type
+- Amount
+- Fee
+- Net Amount
+- Date
+- Time
+- Description
+- Payment Reference
+- Status
+
+Provide:
+
+- Search.
+- Date filters.
+- Category filters.
+- Status filters.
+- Download PDF statement.
+- Download CSV statement.
+
+Transactions must never be silently deleted or modified.
+
+Use a secure financial ledger with atomic database transactions and complete audit trails.
+
+16. SUPER ADMINISTRATOR DASHBOARD
+
+Create a powerful central administration platform.
+
+The administrator must have complete control over E-FINANCE RWANDA.
+
+ADMINISTRATOR LOGIN
+
+Initial administrator account:
+
+Username: ezeprodeveloper@gmail.com
+
+Initial password: Eze@2005
+
+Security requirements:
+
+- Create this account through a secure installation or seeding process.
+- Never hardcode plain-text passwords in publicly accessible source code.
+- Store passwords using secure hashing.
+- Require password change immediately after the first login.
+- Support two-factor authentication.
+- Provide secure administrator password recovery.
+- Protect administrator sessions.
+
+ADMIN DASHBOARD OVERVIEW
+
+Display:
+
+- Total Registered Users
+- Approved Users
+- Pending Users
+- Rejected Users
+- Total Savings
+- Total Deposits
+- Total Withdrawals
+- Pending Withdrawals
+- Total Loans
+- Pending Loan Applications
+- Active Video Campaigns
+- Total Video Views
+- Active Tasks
+- Pending Task Reviews
+- Total Rewards Distributed
+- Total Platform Revenue
+- Pending KYC Applications
+- Payment Verification Requests
+
+Use interactive financial charts and statistics.
+
+USER MANAGEMENT
+
+Administrators must be able to:
+
+- View all registered users.
+- Search users.
+- Filter users.
+- View complete user profiles.
+- View user photographs.
+- View registration information.
+- View educational information.
+- View place of birth.
+- View residence.
+- View KYC information according to permissions.
+- Approve users.
+- Reject users.
+- Suspend accounts.
+- Reactivate accounts.
+- Block suspicious accounts.
+- Reset passwords through secure procedures.
+- Correct user information with an audit record.
+- View user transaction history.
+
+Administrators may manage user profile photographs, but identity-document evidence must remain protected and any replacement must have an auditable correction process.
+
+FINANCIAL MANAGEMENT
+
+Admin must manage:
+
+- Deposits.
+- Savings.
+- Withdrawals.
+- Loan applications.
+- Loan repayments.
+- Activation payments.
+- Video campaign payments.
+- Task campaign payments.
+- Rewards.
+- Platform fees.
+- Financial adjustments.
+
+All manual balance adjustments must require a reason, administrator identity and audit record.
+
+VIDEO MANAGEMENT
+
+Admin must:
+
+- View all uploaded videos.
+- Approve videos.
+- Reject videos.
+- Edit video information.
+- Suspend campaigns.
+- Manage reward rates.
+- Review view statistics.
+- Investigate fraudulent views.
+
+TASK MANAGEMENT
+
+Admin must:
+
+- View all tasks.
+- Approve or reject tasks.
+- Review submissions.
+- Approve or reject individual submissions.
+- View submitted evidence.
+- Manage task categories.
+- Monitor campaign budgets.
+- Detect duplicate submissions.
+
+ADVERTISEMENT MANAGEMENT
+
+Admin must be able to:
+
+- Upload advertisements.
+- Upload banners.
+- Upload promotional videos.
+- Set advertisement titles.
+- Set advertisement descriptions.
+- Set display positions.
+- Set start and end dates.
+- Activate or deactivate advertisements.
+- Manage homepage slides.
+
+SYSTEM SETTINGS
+
+Create a complete system configuration page.
+
+Administrators must be able to configure:
+
+- Platform Name
+- Platform Logo
+- Favicon
+- Contact Email
+- Contact Phone
+- Payment Number
+- Account Activation Fee
+- Welcome Bonus
+- Withdrawal Fee Percentage
+- Minimum Withdrawal
+- Maximum Withdrawal
+- Daily Check-in Reward
+- Minimum Video Reward
+- Video Viewing Rules
+- Task Rules
+- Savings Rules
+- Loan Settings
+- KYC Requirements
+- Notification Settings
+- Currency
+- Timezone
+- Maintenance Mode
+- Registration Availability
+
+All settings must be editable without changing source code.
+
+17. NOTIFICATION SYSTEM
+
+Create a complete notification center.
+
+Users receive notifications when:
+
+- Registration is submitted.
+- Account is approved.
+- Account is rejected.
+- Payment is verified.
+- KYC is approved.
+- KYC is rejected.
+- Withdrawal is approved.
+- Withdrawal is rejected.
+- Loan is approved.
+- Loan is rejected.
+- Video is approved.
+- Video is rejected.
+- Task submission is approved.
+- Task submission is rejected.
+- A reward is credited.
+- A new advertisement is published.
+
+Support in-app notifications and optional email/SMS integration.
+
+18. LIVE RWANDA CLOCK
+
+After login, display a live digital clock.
+
+Use Africa/Kigali timezone.
+
+Show:
+
+- Hours
+- Minutes
+- Seconds
+- Day
+- Month
+- Year
+
+The clock must update every second without refreshing the page.
+
+Add an attractive color-changing animated clock design.
+
+19. DESIGN AND USER EXPERIENCE
+
+Create an exceptionally professional fintech design.
+
+The website must look like a real established financial institution, not a generic template.
+
+COLOR DESIGN
+
+Use a premium combination of:
+
+- Deep Navy Blue
+- Royal Blue
+- Cyan
+- Purple
+- Emerald Green
+- Gold
+- White
+
+Create attractive animated gradients and smooth color transitions.
+
+Background colors should change dynamically in selected sections, creating a beautiful and lively experience.
+
+IMPORTANT DESIGN REQUIREMENTS:
+
+- Animated backgrounds with smooth transitions.
+- Beautiful gradient headers.
+- Attractive footer with subtle color animation.
+- Modern glassmorphism cards.
+- Professional financial charts.
+- Smooth hover effects.
+- Elegant buttons.
+- Beautiful loading animations.
+- Modern form inputs.
+- Consistent spacing.
+- Professional typography.
+- Clean icons.
+- Smooth page transitions.
+
+Animations should be visually impressive without distracting users or reducing performance.
+
+RESPONSIVE DESIGN
+
+The platform must work perfectly on:
+
+- Android phones.
+- iPhones.
+- Tablets.
+- Windows computers.
+- Laptops.
+- Desktop screens.
+
+Use mobile-first responsive design.
+
+On mobile:
+
+- Compact navigation.
+- Responsive dashboard cards.
+- Easy-to-use forms.
+- Properly sized buttons.
+- Mobile-friendly tables.
+- Collapsible sidebar.
+- Fast page loading.
+
+20. SECURITY AND FINANCIAL INTEGRITY
+
+Security is a fundamental requirement.
+
+Implement:
+
+- PDO prepared statements.
+- Password hashing.
+- CSRF protection.
+- XSS protection.
+- SQL injection prevention.
+- Secure session management.
+- Role-based access control.
+- File upload validation.
+- Rate limiting.
+- Login attempt protection.
+- Secure password reset.
+- Audit logging.
+- Financial transaction validation.
+- Duplicate transaction prevention.
+- Database backup procedures.
+- Private KYC document storage.
+- Secure administrator permissions.
+
+Use an immutable financial ledger.
+
+Never allow users to directly edit their balances.
+
+All deposits, withdrawals, rewards, savings and loan operations must go through validated backend financial transactions.
+
+Do not create fake payment confirmations or pretend that a Mobile Money payment has succeeded without verification.
+
+21. LEGAL AND OPERATIONAL REQUIREMENTS
+
+Because this platform handles savings, deposits, withdrawals, loans and financial rewards in Rwanda, design it with regulatory compliance in mind.
+
+Before activating real-money financial services, establish the appropriate legal entity, permissions and regulatory approvals applicable to each service.
+
+Include:
+
+- Terms and Conditions.
+- Privacy Policy.
+- KYC and AML procedures.
+- Transparent fees.
+- User consent.
+- Complaint management.
+- Data protection.
+- Financial reporting.
+- Responsible lending rules.
+
+Do not represent the platform as a licensed bank or financial institution unless it has the necessary authorization.
+
+Use demo or sandbox mode for financial operations until the required payment integrations and authorizations are in place.
+
+22. DATABASE STRUCTURE
+
+Design a normalized MySQL database.
+
+Include tables such as:
+
+- users
+- user_profiles
+- user_education
+- user_addresses
+- identity_documents
+- kyc_applications
+- kyc_documents
+- admin_users
+- roles
+- permissions
+- user_roles
+- wallets
+- wallet_accounts
+- financial_transactions
+- ledger_entries
+- deposits
+- savings_accounts
+- savings_transactions
+- withdrawal_requests
+- loan_products
+- loan_applications
+- loans
+- loan_repayments
+- videos
+- video_campaigns
+- video_views
+- video_rewards
+- tasks
+- task_submissions
+- task_rewards
+- checkins
+- checkin_rewards
+- payment_requests
+- payment_verifications
+- advertisements
+- homepage_slides
+- notifications
+- system_settings
+- audit_logs
+- support_tickets
+
+Add all necessary indexes, foreign keys, unique constraints and timestamps.
+
+Use database transactions for all financial operations.
+
+23. SUPPORT AND CUSTOMER SERVICE
+
+Create a customer support center.
+
+Users must be able to:
+
+- Submit support requests.
+- Select support categories.
+- Explain their problems.
+- Upload supporting screenshots.
+- View support ticket status.
+- Receive administrator responses.
+
+Administrators must be able to:
+
+- View support tickets.
+- Respond to users.
+- Assign support agents.
+- Close tickets.
+- Review previous conversations.
+
+24. FINAL DEVELOPMENT DELIVERABLES
+
+Build the entire working application.
+
+Provide:
+
+1. Complete frontend.
+2. Complete backend.
+3. Complete MySQL database.
+4. SQL installation file.
+5. Secure administrator setup.
+6. User registration and authentication.
+7. User dashboard.
+8. Administrator dashboard.
+9. All financial modules.
+10. Video earning system.
+11. Video campaign management.
+12. Paid task system.
+13. Daily check-in system.
+14. KYC verification.
+15. Complete transaction history.
+16. Notification system.
+17. Advertisement management.
+18. System settings.
+19. Responsive mobile design.
+20. Installation documentation.
+
+The system must be tested thoroughly.
+
+Test user registration, approval, activation payment verification, login, deposits, savings, withdrawals, loan applications, KYC, video views, video campaign payments, task submissions, administrator approval, reward distribution and transaction history.
+
+Do not leave important buttons inactive.
+
+Do not use fake data as real financial information.
+
+Do not create frontend-only features that have no working backend.
+
+Do not leave unfinished modules, broken links or placeholder pages.
+
+25. BRANDING AND HUMANIZED DESIGN
+
+The name must always be:
+
+E-FINANCE RWANDA
+
+Create a professional, original financial brand identity.
+
+Make the interface look like it was designed by an experienced human fintech product design team.
+
+Avoid:
+
+- AI-generated branding references.
+- Robot icons.
+- AI assistant imagery.
+- Generic AI-template layouts.
+- Unnecessary technical labels visible to customers.
+- Repetitive generic descriptions.
+- Fake testimonials.
+- Fake financial statistics.
+- Unprofessional animations.
+
+Use natural, clear and trustworthy financial language.
+
+The platform must communicate security, transparency, reliability and financial growth.
+
+FINAL INSTRUCTION
+
+Build E-FINANCE RWANDA as a complete, production-oriented financial platform with a beautiful user experience, secure backend, reliable financial records and full administrator control.
+
+Prioritize functionality, financial accuracy, security, responsiveness and professional presentation.
+
+Every module must work correctly and communicate with the database.
+
+The final result must be a complete E-FINANCE RWANDA platform, not merely a website prototype.
